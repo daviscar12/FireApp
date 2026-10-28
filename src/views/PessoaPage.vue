@@ -7,7 +7,7 @@
           <label>Nome <input v-model.trim="name" required /></label>
           <label>Data de nascimento <input v-model="birthDate" type="date" required /></label>
           <label>Nickname <input v-model.trim="nickname" required /></label>
-          <label>Foto <input type="file" accept="image/*" @change="selectPhoto" /></label>
+          <label>Fotos <input type="file" accept="image/*" @change="selectPhoto" /></label>
           <img v-if="image" class="avatar" :src="image" alt="Foto do perfil" />
           <p v-if="message">{{ message }}</p>
           <button :disabled="loading">{{ loading ? 'Salvando...' : 'Salvar perfil' }}</button>
